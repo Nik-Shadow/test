@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<header>
+	<div class="n" >
+		<img src="icon.png" width="30px" height="30px">
+		<h2>Какой-то сайт</h2>
+	</div>
+	<div>
+		<a href="">Первый</a>
+		<a href="">Второй</a>
+		<a href="">Третий?</a>
+	</div>
+</header>
+<div class="w"></div>
+<content>
+	<div class="a">
+	<h1>Заголовок</h1>
+	<p>В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть подвергнуты целой серии независимых исследований.<br> В своём стремлении повысить качество жизни, они забывают, что реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации стандартных подходов. Прежде всего, повышение уровня гражданского сознания обеспечивает актуальность поставленных обществом задач.<br> Равным образом, высокотехнологичная концепция общественного уклада прекрасно подходит для реализации соответствующих условий активизации.В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта призывают нас к новым свершениям, которые, в свою очередь, должны быть подвергнуты целой серии независимых исследований.<br> В своём стремлении повысить качество жизни, они забывают, что реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации стандартных подходов. Прежде всего, повышение уровня гражданского сознания обеспечивает актуальность поставленных обществом задач.<br> Равным образом, высокотехнологичная концепция общественного уклада прекрасно подходит для реализации соответствующих условий активизации.</p>
+	<img src="content.png" width="70%" height="50%">
+</div>
+	<div class="b">
+		<h3>Прочее</h3>
+		<a href="">
+			<div class="card">
+				<img src="вопрос.png" width="200px" height="150px">
+				<p>Что будет в будущем?</p>
+			</div>
+		</a>
+		<a href="">
+			<div class="card">
+				<img src="вопрос.png" width="200px" height="150px">
+				<p>Что будет в будущем?</p>
+			</div>
+		</a>
+		<a href="">
+			<div class="card">
+				<img src="вопрос.png" width="200px" height="150px">
+				<p>Что будет в будущем?</p>
+			</div>
+		</a>
+	</div>
+</content>
+<aside>
+	<a href="">
+			<div class="block_a">
+				<img src="вопрос.png" width="400px" height="200px">
+				<p>А что насчет СЕЙЧАС?</p>
+			</div>
+		</a>
+	<a href="">
+			<div class="block_a">
+				<img src="вопрос.png" width="400px" height="200px">
+				<p>А что насчет СЕЙЧАС?</p>
+			</div>
+		</a>
+	<a href="">
+			<div class="block">
+				<img src="вопрос.png" width="400px" height="200px">
+				<p>А что насчет СЕЙЧАС?</p>
+			</div>
+		</a>
+	<a href="">
+			<div class="block">
+				<img src="вопрос.png" width="400px" height="200px">
+				<p>А что насчет СЕЙЧАС?</p>
+			</div>
+		</a>	
+</aside>
+<footer>
+	<h3>Создано:в каком-то ГодУ какого-то вЕКа Никитой
+	</h3><h3>Прав Нет Чтобы Их Защищать.рф</h3>
+</footer>
+</body>
+<style type="text/css">
+	.w{height: 70px;}
+	header, .n{display: flex;
+	}
+	header h2{font-family: cursive;}
+	a{text-decoration: none;color: black;}
+	h3{margin: 0;}
+	.n{margin-left: 50px;margin-right:40%;}
+	header div *{margin:0px 30px;}
+	header{height: 70px;align-items: center;background: lightgray;position: fixed;width: 89.5%;}
+	header a{text-decoration: none;color: darkgray;transition: 1s;}
+	header a:hover,header a:first-of-type{color: black;}
+	h1{margin-left:30px;}
+	body{margin:0px 100px;background: white;}
+	.card{
+		border: 5px solid lightgray;width:210px;
+		margin-left:35%;transition: 1s}
+		content{display: flex;}
+	.a{width: 70%;}
+	.b{width: 30%;text-align: center;}
+	.b h3{margin-bottom: 0;}
+	.b *:not(p){margin-top: 30px;}
+	.card p{
+		background: rgba(255, 255, 255, 0.8);
+		text-align:center;}
+	.b img{margin-top: 0;transition: 1s;}
+	.card:hover img{width:250px;height:200px;}
+	.card:hover{width: 260px;font-size: 20px;margin-left: 
+		30%;}
+	.a p{width: 90%;font-family: sans-serif;}
+	.a img{margin:50px 90px;border: 15px outset darkblue;padding: 10px;}
+	aside{display: grid;grid-template-columns: 1fr 1fr;
+	margin: 200px 200px;}
+	.block img, .block_a img{animation-name: spin;animation-duration: 1.5s;animation-iteration-count:inherit;animation-play-state: paused;}
+	@keyframes spin{
+		0%{top: 0;}
+		50%{margin-top: -50px;transform:rotate(180deg);
+			padding-bottom: 50px;}
+		100%{top: 0;transform: rotate(360deg);}
+	}
+	.block:hover img, .block_a:hover img{animation-play-state:running;}
+	.block:not(:hover) img, .block_a:not(:hover) img{animation-name: back;animation-duration: 1s;}
+	@keyframes back{to{margin: 0;}}
+	.block_a{border-bottom: 4px dashed orange;}
+	.block, .block_a{padding:25px 0;}
+	html{background: url(img5.png) no-repeat;
+		background-size: cover;}
+	footer{background: lightgray;width: 100%;
+		text-align: center;font-family: sans-serif;
+		margin-top: -100px;height: 75px;padding-top: 20px;}
+	footer h3{margin-top: 10px;}
+
+</style>
+</html>
